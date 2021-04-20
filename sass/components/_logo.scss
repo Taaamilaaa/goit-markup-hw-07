@@ -1,0 +1,21 @@
+.logo {
+  color: black;
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  &--accent {
+    color: $accent-color;
+  }
+}
+.logo--contrast {
+  color: $complementary-color;
+}
+.logo--head-position {
+  display: block;
+  margin-right: 93px;
+}
+.logo--footer-position {
+  margin-bottom: 20px;
+}

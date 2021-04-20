@@ -1,0 +1,111 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.site-navigation {
+  display: flex;
+  align-items: center;
+}
+.site-navigation__content {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.navigation-list {
+  font-style: normal;
+  list-style-type: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+  display: flex;
+}
+.navigation-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation-list__link {
+  position: relative;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 30px;
+  color: $title-color;
+
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.navigation-list__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  display: block;
+
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+.addres-list {
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  list-style: none;
+  &__link {
+    color: $main-text-color;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 31px;
+
+    transition: color $transition;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+.addres-list :not(:first-child) {
+  margin-left: 50px;
+}
+
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $main-text-color;
+
+  transition: fill $transition;
+}
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: $main-text-color;
+
+  transition: fill $transition;
+}
+.addres-list__link:focus .envelope-icon,
+.addres-list__link:hover .envelope-icon {
+  fill: $accent-color;
+}
+
+.addres-list__link:focus .smartphone-icon,
+.addres-list__link:hover .smartphone-icon {
+  fill: $accent-color;
+}

@@ -1,0 +1,99 @@
+.footer-section {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.footer-section__column {
+  flex-basis: calc(50% - 45px) / 2;
+  &:last-child {
+    flex-basis: calc(50% - 15px);
+  }
+  &--position {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.location__list {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.location__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.location__link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $hover-focus-color;
+  }
+}
+.location__address {
+  color: $complementary-color;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color $transition;
+  &:hover,
+  &:focus {
+    color: $hover-focus-color;
+  }
+}
+.footer-section__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $complementary-color;
+}
+.social-list__icon--white {
+  fill: $complementary-color;
+}
+.footer-section__form {
+  display: flex;
+}
+.footer-section__input {
+  padding: 15px 16px;
+  height: 50px;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: rgb(47, 48, 58);
+  transition: border $transition;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+.footer-section__button {
+  margin-left: 12px;
+  transition: box-shadow $transition, background-color $transition;
+  &:hover,
+  &:focus {
+    box-shadow: $footer-btn-shadow;
+    background-color: $hover-focus-color;
+  }
+}
+.footer-section__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}

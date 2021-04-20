@@ -1,0 +1,29 @@
+.work-section {
+  padding-bottom: 94px;
+  &__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+  }
+}
+.work-section__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $complementary-color;
+}

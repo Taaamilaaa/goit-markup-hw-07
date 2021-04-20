@@ -1,0 +1,41 @@
+.team-section {
+  background-color: $buttons-color;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+  }
+}
+.employee {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  background-color: $complementary-color;
+  text-align: center;
+  box-shadow: $employee-box-shadow;
+  border-radius: 0px 0px 4px 4px;
+  &__name {
+    color: $title-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__position {
+    font-size: 16px;
+    line-height: 1.18;
+    margin: 0px;
+  }
+  &__position {
+    font-size: 16px;
+    line-height: 1.18;
+    margin: 0px;
+  }
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+}
