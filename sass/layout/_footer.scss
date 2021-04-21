@@ -8,6 +8,9 @@
     align-items: baseline;
   }
 }
+.logo--footer-position {
+  margin-bottom: 20px;
+}
 .footer-section__column {
   flex-basis: calc(50% - 45px) / 2;
   &:last-child {
@@ -87,8 +90,8 @@
 .footer-section__button {
   margin-left: 12px;
   transition: box-shadow $transition, background-color $transition;
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     box-shadow: $footer-btn-shadow;
     background-color: $hover-focus-color;
   }
